@@ -43,7 +43,7 @@ body{
 .form-element{
     display: flex;
     flex-direction: row;
-    border: 1px solid #9CA3AF;
+    border: 1px solid #ececec;
     border-radius: 0.5rem;
     height: 4rem;
 }
@@ -52,7 +52,7 @@ body{
     display: flex;
     padding: .5rem;
     flex-direction: column;
-    border: 1px solid #9CA3AF;
+    border: 1px solid #ececec;
     border-radius: 0.5rem;
 }
 
@@ -78,14 +78,14 @@ body{
     left: 0;
     bottom: 0;
     margin-left: 0.5rem;
-    border-bottom: 1px solid #D1D5DB;
+    border-bottom: 1px solid #feffff;
 }
 
 .label-element::after{
     position: absolute;
     height: 100%;
     width: 91.666667%;
-    border-bottom: 2px solid #3B82F6;
+    border-bottom: 2px solid #3bf64b;
     margin-left: 0.5rem;
     left: 0;
     bottom: 0;
@@ -114,11 +114,15 @@ body{
 
 .input-element:focus + .label-element .content-label, .input-element.input-element:not(:placeholder-shown) + .label-element .content-label{
     transform: translateY(-1.25rem);
-    color: #3B82F6;
+    color: #3bf64b;
     font-size: 0.875rem;
 }
 
 .input-element:focus + .label-element::after, .input-element.input-element.input-element:not(:placeholder-shown){
     transform: translateX(0);
-    border-color: #3B82F6;
+    border-color: #3bf64b;
+}
+
+.btn-simple-1{    
+    @apply border focus:outline-none focus:border-teal-200 transition-colors duration-300 rounded-lg border-teal-500 bg-teal-500 hover:bg-teal-400 focus:bg-teal-300 p-2
 }
