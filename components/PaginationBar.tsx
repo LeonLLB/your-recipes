@@ -56,13 +56,10 @@ const PaginationBar = () => {
 
     const onClick = (shouldChange = true) : void => {
         setPaginationRange(changePagination(pageNum,PaginationRange,pages)); 
-    };
-
-    
+    };    
 
     if(pageNum > pages){
-        router.push('/1');
-        setPaginationRange([1,2,3,4,5]);
+        router.push('/');  
     }
   
     return (
