@@ -64,7 +64,7 @@ const PaginationBar = () => {
   
     return (
         <div className="flex flex-row justify-center space-x-4 w-full">
-            <div className='py-2 px-4 text-lg rounded-md border border-teal-400 bg-emerald-50'>
+            <div className='py-1 px-2 sm:py-2 sm:px-4 text-lg rounded-md border border-teal-400 bg-emerald-50'>
                 <button disabled={pageNum === 1} onClick={(e)=>{e.preventDefault();router.push('/'+(pageNum-1));onClick()}}>
                     &lt;
                 </button>
@@ -72,7 +72,7 @@ const PaginationBar = () => {
             { PaginationRange.map(val=>(
                 <PaginationBarItem key={val} number={val} onClick={onClick}/>
             ))}
-            <div className='py-2 px-4 text-lg rounded-md border border-teal-400 bg-emerald-50'>
+            <div className='py-1 px-2 sm:py-2 sm:px-4 text-lg rounded-md border border-teal-400 bg-emerald-50'>
                 <button disabled={pageNum === pages} onClick={(e)=>{e.preventDefault();router.push('/'+(pageNum+1));onClick()}}>
                     &gt;
                 </button>

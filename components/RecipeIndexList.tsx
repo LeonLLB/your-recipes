@@ -33,7 +33,7 @@ const RecipeIndexList = () => {
     }
 
     return (
-        <div className='grid grid-cols-2 gap-2 mx-5 p-2 place-items-center'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-2 mx-5 p-2 place-items-center'>
             {   testArray.map(val=>(
                 <article onClick={(e)=>{onRecipeClick(e,val)}} key={val} className='hover:cursor-pointer p-2 w-fit flex flex-col items-center content-center justify-between border-2 rounded-md'>
                     <img src="stew test.jpg" alt="test" className='h-72 w-72 rounded-md'/>
